@@ -1,0 +1,33 @@
+﻿<Window x:Class="AplikacjaMastermind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AplikacjaMastermind"
+        mc:Ignorable="d"
+        Title="MasterMInd" Height="800" Width="400"
+        Background="DarkGray"
+        >
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <Menu VerticalAlignment="Top">
+                    <MenuItem Header="Gra">
+                        <MenuItem Header="Nowa" Click="MenuNew"></MenuItem>
+                        <MenuItem Header="Zakończ" Click="MenuEnd"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Zasady gry" Click="Rules"></MenuItem>
+                    <MenuItem Header="O programie" Click="About"></MenuItem>
+                </Menu>
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <Button Name="CheckGame" Click="CheckGame_Click" Content="Sprawdź"></Button>
+                </ScrollViewer>
+                <TextBox x:Name="losowane" Width="380px" Height="30px"/>
+            </StackPanel>
+            <StackPanel Name="MainBoard" Margin="5">
+                
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
